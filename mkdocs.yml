@@ -1,5 +1,12 @@
 site_name: Evoleaps Help
-theme:
-  name: material
+
 nav:
   - Home: index.md
+  - Smart Import:
+    - Introduction: SmartImport/index.md
+    - Getting Started: SmartImport/getting-started.md
+    - Regenerate: SmartImport/regenerate.md
+    - Error Handling: SmartImport/error-handling.md
+
+theme:
+  name: material  # Optional theme

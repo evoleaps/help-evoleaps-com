@@ -1,7 +1,7 @@
 # Welcome to Evoleaps Help
 
-## Projects
+## Apps 	
 
-- [SmartImport](SmartImport/index.md)
-- [SmartWorkFlow](SmartWorkFlow/index.md)
+- [Smart Import](SmartImport/index.md)
+[comment]: <> (- [SmartWorkFlow](SmartWorkFlow/index.md))
 
