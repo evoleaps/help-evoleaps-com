@@ -1,3 +1,24 @@
 .md-header {
     background-color: #1db9c4 !important; /* Change this to your preferred color */
 }
+
+.footer-logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  position: fixed;
+  bottom: 10px; /* Distance from bottom */
+  left: 0;
+  z-index: 1000;
+}
+.footer-logo img {
+  width: 100px;  /* Adjust width */
+  height: auto; /* Maintain aspect ratio */
+  opacity: 0.8; /* Optional: Make it slightly transparent */
+}
+
+.md-footer-meta {
+  display: none !important;
+}
+
