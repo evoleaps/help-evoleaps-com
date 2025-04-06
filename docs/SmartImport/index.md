@@ -1,10 +1,42 @@
-# About the app
-&nbsp;  
+# **About the Excel Smart Import app**
 
-This app streamlines the process of importing data from Microsoft Excel into the General Journal, requiring no setup or predefined templates. With advanced AI-driven recognition, the app intelligently matches Excel columns to journal fields based on their names, even if they don't align perfectly. The AI technology ensures seamless identification of the correct columns, eliminating the need for manual adjustments or precise naming conventions. Simply upload your Excel file, and the app automatically detects and matches the relevant columns, ensuring accuracy and saving valuable time. With its advanced capabilities, the app simplifies data management, allowing users to focus on their core tasks without interruptions.
+&nbsp;
+
+This app simplifies and accelerates the process of importing data from Microsoft Excel into the General Journal in Dynamics 365 Business Central — no predefined templates or manual setup required.
+
+Powered by advanced AI recognition, the app intelligently maps Excel columns to journal fields based on their names — even when the labels aren’t an exact match. It automatically identifies and aligns the correct fields, reducing manual effort and minimizing the risk of errors.
+
+Simply upload your Excel file, and the app handles the rest:  
+✔️ Detects relevant columns  
+✔️ Matches them to the appropriate journal fields  
+✔️ Ensures data accuracy and consistency
+
+&nbsp;
+
+### Supported Journals and Entities
+
+The app supports a wide range of journals and record types, including:
+
+- **General Journals**
+- **Cash Receipt Journals**
+- **Fixed Asset Journals**
+- **Payment Journals**
+- **Purchase Journals**
+- **Sales Journals**
+- **Recurring Journals**
+- **Item Journals**
+- **Resource Journals**
+
+As well as master data imports for:
+
+- **Customers**
+- **Vendors**
+- **Employees**
+- **Fixed Assets**
+
+This broad support makes the app ideal for a variety of business scenarios — from accounting to operations.
+
 &nbsp;  
 &nbsp;  
 
 ![Excel import](Assets/ImportExcel.png)
-
-
