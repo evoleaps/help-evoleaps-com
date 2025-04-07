@@ -20,7 +20,7 @@
     
     
       
-        <title>Getting Started - Evoleaps Help</title>
+        <title>Getting Started - </title>
       
     
     
@@ -55,7 +55,16 @@
     
     
     
-  </head>
+   <link href="../../assets/stylesheets/glightbox.min.css" rel="stylesheet"/><style>
+    html.glightbox-open { overflow: initial; height: 100%; }
+    .gslide-title { margin-top: 0px; user-select: text; }
+    .gslide-desc { color: #666; user-select: text; }
+    .gslide-image img { background: white; }
+    .gscrollbar-fixer { padding-right: 15px; }
+    .gdesc-inner { font-size: 0.75rem; }
+    body[data-md-color-scheme="slate"] .gdesc-inner { background: var(--md-default-bg-color);}
+    body[data-md-color-scheme="slate"] .gslide-title { color: var(--md-default-fg-color);}
+    body[data-md-color-scheme="slate"] .gslide-desc { color: var(--md-default-fg-color);}</style> <script src="../../assets/javascripts/glightbox.min.js"></script></head>
   
   
     
@@ -74,7 +83,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#how-to-use" class="md-skip">
+        <a href="#getting-started" class="md-skip">
           Skip to content
         </a>
       
@@ -90,10 +99,11 @@
 
 <header class="md-header md-header--shadow" data-md-component="header">
   <nav class="md-header__inner md-grid" aria-label="Header">
-    <a href="../.." title="Evoleaps Help" class="md-header__button md-logo" aria-label="Evoleaps Help" data-md-component="logo">
-      
-  <img src="../../assets/images/logo/smallGray.png" alt="logo">
-
+    <a href="../.." title="" class="md-header__button md-logo" aria-label="" data-md-component="logo">
+      <a href="../../" class="md-header__button md-logo" title="Evoleaps Help" style="display: flex; align-items: center; gap: 10px;">
+  <img src="../../assets/images/logo/smallGray.png" alt="Evoleaps Help" style="height: 40px;" />
+  <span style="color: inherit; font-weight: 700; font-size: 1.25rem;">Evoleaps Help</span>
+</a>
     </a>
     <label class="md-header__button md-icon" for="__drawer">
       
@@ -103,7 +113,7 @@
       <div class="md-header__ellipsis">
         <div class="md-header__topic">
           <span class="md-ellipsis">
-            Evoleaps Help
+            
           </span>
         </div>
         <div class="md-header__topic" data-md-component="header-topic">
@@ -210,36 +220,16 @@
 
 <nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
   <label class="md-nav__title" for="__drawer">
-    <a href="../.." title="Evoleaps Help" class="md-nav__button md-logo" aria-label="Evoleaps Help" data-md-component="logo">
-      
-  <img src="../../assets/images/logo/smallGray.png" alt="logo">
-
+    <a href="../.." title="" class="md-nav__button md-logo" aria-label="" data-md-component="logo">
+      <a href="../../" class="md-header__button md-logo" title="Evoleaps Help" style="display: flex; align-items: center; gap: 10px;">
+  <img src="../../assets/images/logo/smallGray.png" alt="Evoleaps Help" style="height: 40px;" />
+  <span style="color: inherit; font-weight: 700; font-size: 1.25rem;">Evoleaps Help</span>
+</a>
     </a>
-    Evoleaps Help
+    
   </label>
   
   <ul class="md-nav__list" data-md-scrollfix>
-    
-      
-      
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../.." class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    Home
-    
-  </span>
-  
-
-      </a>
-    </li>
-  
-
     
       
       
@@ -257,10 +247,10 @@
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" checked>
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_1" checked>
         
           
-          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="0">
+          <label class="md-nav__link" for="__nav_1" id="__nav_1_label" tabindex="0">
             
   
   <span class="md-ellipsis">
@@ -272,8 +262,8 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="true">
-          <label class="md-nav__title" for="__nav_2">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_1_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_1">
             <span class="md-nav__icon md-icon"></span>
             Smart Import
           </label>
@@ -317,6 +307,18 @@
         
       
       
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    Getting Started
+    
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
       <a href="./" class="md-nav__link md-nav__link--active">
         
   
@@ -327,6 +329,43 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#step-by-step-how-to-import-excel-data" class="md-nav__link">
+    <span class="md-ellipsis">
+      🧭 Step-by-Step: How to Import Excel Data
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#example-screenshots" class="md-nav__link">
+    <span class="md-ellipsis">
+      📸 Example Screenshots
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
       
     </li>
   
@@ -404,6 +443,32 @@
     
   
   
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#step-by-step-how-to-import-excel-data" class="md-nav__link">
+    <span class="md-ellipsis">
+      🧭 Step-by-Step: How to Import Excel Data
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#example-screenshots" class="md-nav__link">
+    <span class="md-ellipsis">
+      📸 Example Screenshots
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
 </nav>
                   </div>
                 </div>
@@ -418,32 +483,90 @@
 
 
 
-<h1 id="how-to-use">How to use</h1>
-<p>&nbsp;  </p>
-<p>The app is fully operational immediately upon installation, with no setup required. A new action, "Import with Copilot," will be added to the General Journal, as shown below:</p>
-<p><img alt="Gen Journal Image" src="../Assets/Action.png" /><br />
-&nbsp;<br />
-&nbsp;  </p>
-<p>After clicking on this action, a new dialog page will be shown:</p>
-<p><img alt="AI Prompt" src="../Assets/AIPrompt.png" /><br />
-&nbsp;<br />
-&nbsp;  </p>
-<p>Simply click 'Attach' or 'Import Data from File' and select the desired Excel file for seamless import:</p>
-<p><img alt="Import Prompt" src="../Assets/ImportPrompt.png" /><br />
-&nbsp;<br />
-&nbsp;  </p>
-<p>The app will automatically perform the column matching and display a preview of the data for your review:</p>
-<p><img alt="Import Preview" src="../Assets/ImportPreview.png" /><br />
-&nbsp;<br />
-&nbsp;   </p>
-<p>After clicking on Keep it, the lines will be imported into the journal:</p>
-<p><img alt="Journal After Import" src="../Assets/JournalAfterImport.png" /><br />
-&nbsp;<br />
-&nbsp; </p>
-<p>The Excel file used in this example is structured as follows:</p>
-<p><img alt="Excel Sample" src="../Assets/ExcelSample.png" /><br />
-&nbsp;<br />
-&nbsp;  </p>
+<h1 id="getting-started"><strong>Getting Started</strong></h1>
+<p>&nbsp;</p>
+<p>This app is ready to use immediately after installation — no setup required.</p>
+<p>A new action called <strong>Import with Copilot</strong> is available across multiple journals and master data tables — not just the <strong>General Journal</strong>.</p>
+<p>You can use it to quickly import data into:</p>
+<ul>
+<li><strong>General Journals</strong></li>
+<li><strong>Cash Receipt Journals</strong></li>
+<li><strong>Fixed Asset Journals</strong></li>
+<li><strong>Payment Journals</strong></li>
+<li><strong>Purchase Journals</strong></li>
+<li><strong>Sales Journals</strong></li>
+<li><strong>Recurring Journals</strong></li>
+<li><strong>Item Journals</strong></li>
+<li><strong>Resource Journals</strong></li>
+</ul>
+<p>As well as master data like:</p>
+<ul>
+<li><strong>Customers</strong></li>
+<li><strong>Vendors</strong></li>
+<li><strong>Employees</strong></li>
+<li><strong>Fixed Assets</strong></li>
+</ul>
+<p>&nbsp;</p>
+<h2 id="step-by-step-how-to-import-excel-data">🧭 Step-by-Step: How to Import Excel Data</h2>
+<ol>
+<li>
+<p><strong>Click Import with Copilot</strong><br />
+   Locate this action in the ribbon of the journal or table where you want to import data.</p>
+</li>
+<li>
+<p><strong>Select Your Excel File</strong><br />
+   In the dialog that appears, click <strong>Attach</strong> or <strong>Import Data from File</strong>, then choose your Excel document.</p>
+</li>
+<li>
+<p><strong>Review the Data Preview</strong><br />
+   The app automatically detects and matches columns based on their names. You’ll see a preview of the records that will be imported.</p>
+</li>
+<li>
+<p><strong>Confirm the Import</strong><br />
+   Click <strong>Keep it</strong> to finalize the import. The data will be inserted into the journal or table immediately.</p>
+</li>
+</ol>
+<div class="admonition warning">
+<p class="admonition-title">Important</p>
+<p>The <strong>order</strong> of the columns <strong>Account Type</strong> and <strong>Account No.</strong> in your Excel file matters.<br />
+Make sure <strong>Account Type</strong> comes <strong>before</strong> <strong>Account No.</strong> to ensure correct field mapping and avoid errors.</p>
+</div>
+<p>&nbsp;</p>
+<h2 id="example-screenshots">📸 Example Screenshots</h2>
+<ol>
+<li>
+<p><strong>General Journal — Import with Copilot Action</strong><br />
+<em>This shows where the Import action is located in the General Journal.</em><br />
+<a class="glightbox" href="../Assets/Action.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="General Journal - Import Action" src="../Assets/Action.png" /></a></p>
+</li>
+<li>
+<p><strong>AI Prompt for Import</strong><br />
+<em>The prompt used by the AI to help recognize and import your file.</em><br />
+<a class="glightbox" href="../Assets/AIPrompt.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="AI Prompt" src="../Assets/AIPrompt.png" /></a></p>
+</li>
+<li>
+<p><strong>Import File Dialog</strong><br />
+<em>Attach your Excel file or select it for import.</em><br />
+<a class="glightbox" href="../Assets/ImportPrompt.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="Import Prompt" src="../Assets/ImportPrompt.png" /></a></p>
+</li>
+<li>
+<p><strong>Data Preview Window</strong><br />
+<em>A preview of how the Excel data maps into the journal lines.</em><br />
+<a class="glightbox" href="../Assets/ImportPreview.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="Import Preview" src="../Assets/ImportPreview.png" /></a></p>
+</li>
+<li>
+<p><strong>Journal After Import</strong><br />
+<em>Imported lines are added to the journal automatically.</em><br />
+<a class="glightbox" href="../Assets/JournalAfterImport.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="Journal After Import" src="../Assets/JournalAfterImport.png" /></a></p>
+</li>
+<li>
+<p><strong>Sample Excel File</strong><br />
+<em>An example Excel file with data ready for import.</em><br />
+<a href="/Assets/sample-journal.xlsx">Download this Excel template to try it yourself →</a></p>
+</li>
+</ol>
+<hr />
+<p>✅ That’s it! Your data is imported and ready to post — no templates, no manual mapping, no stress.</p>
 
 
 
@@ -466,23 +589,39 @@
         
       </main>
       
-        <footer class="md-footer">
-  
-  <div class="md-footer-meta md-typeset">
-    <div class="md-footer-meta__inner md-grid">
-      <div class="md-copyright">
-  
-  
-    Made with
-    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
-      Material for MkDocs
-    </a>
-  
-</div>
-      
-    </div>
-  </div>
+        <footer class="custom-footer">
+  <a href="https://www.evoleaps.com/" target="_blank">
+    <img src="../../assets/images/logo/l2.png" alt="Evoleaps Logo" />
+  </a>
+  <p>© 2025 by Evoleaps</p>
 </footer>
+
+<style>
+.custom-footer {
+  text-align: center;
+  padding: 20px 0;
+  font-family: sans-serif;
+  font-size: 14px;
+  color: #777;
+}
+
+.custom-footer img {
+  width: 100px;
+  height: auto;
+  opacity: 0.9;
+  cursor: pointer;
+  margin-bottom: 8px;
+}
+
+.custom-footer a {
+  color: #777;
+  text-decoration: none;
+}
+
+.custom-footer a:hover {
+  text-decoration: underline;
+}
+</style>
       
     </div>
     <div class="md-dialog" data-md-component="dialog">
@@ -496,5 +635,7 @@
       <script src="../../assets/javascripts/bundle.c8b220af.min.js"></script>
       
     
-  </body>
+  <script id="init-glightbox">const lightbox = GLightbox({"touchNavigation": true, "loop": false, "zoomable": true, "draggable": true, "openEffect": "zoom", "closeEffect": "zoom", "slideEffect": "slide"});
+document$.subscribe(() => { lightbox.reload() });
+</script></body>
 </html>
