@@ -2,11 +2,11 @@ site_name: ""
 
 nav:
 
-  - Smart Import:
+  - Smart Import for Excel:
     - Introduction: SmartImport/index.md
-    - Getting Started: SmartImport/getting-started.md
-    - Regenerate: SmartImport/regenerate.md
-    - Error Handling: SmartImport/error-handling.md
+    - Getting Started - General Journal: SmartImport/getting-started.md
+    #- Regenerate: SmartImport/regenerate.md
+    #- Error Handling: SmartImport/error-handling.md
 
 theme:
   name: material  # Optional theme

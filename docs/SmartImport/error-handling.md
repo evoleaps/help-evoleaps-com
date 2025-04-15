@@ -18,7 +18,7 @@ These error messages appear directly on the **Import Proposal** page, so you can
 
 &nbsp;
 
-## 📸 Example Screenshots
+## Example Screenshots
 
 - **Import Error Notification**  
   _An error message is shown directly on the Import Proposal page._  
