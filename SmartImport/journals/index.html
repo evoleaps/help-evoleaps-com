@@ -9,6 +9,10 @@
       
       
       
+        <link rel="prev" href="../copilot-usage/">
+      
+      
+        <link rel="next" href="../master-data/">
       
       
       <link rel="icon" href="../../assets/images/favicon.png">
@@ -16,7 +20,7 @@
     
     
       
-        <title>Error Handling - </title>
+        <title>Journals - </title>
       
     
     
@@ -78,11 +82,6 @@
     <label class="md-overlay" for="__drawer"></label>
     <div data-md-component="skip">
       
-        
-        <a href="#error-handling" class="md-skip">
-          Skip to content
-        </a>
-      
     </div>
     <div data-md-component="announce">
       
@@ -115,7 +114,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Error Handling
+              Journals
             
           </span>
         </div>
@@ -234,18 +233,20 @@
       
   
   
+    
   
   
+  
     
     
     
     
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_1" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_1" checked>
         
           
           <label class="md-nav__link" for="__nav_1" id="__nav_1_label" tabindex="0">
@@ -261,7 +262,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_1_label" aria-expanded="false">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_1_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_1">
             <span class="md-nav__icon md-icon"></span>
             Smart Import for Excel
@@ -548,18 +549,20 @@
                 
   
   
+    
   
   
+  
     
     
     
     
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_1_3" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_1_3" checked>
         
           
           <label class="md-nav__link" for="__nav_1_3" id="__nav_1_3_label" tabindex="0">
@@ -575,7 +578,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_1_3_label" aria-expanded="false">
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_1_3_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_1_3">
             <span class="md-nav__icon md-icon"></span>
             Supported Import Destinations
@@ -586,10 +589,17 @@
                 
   
   
+    
   
   
-    <li class="md-nav__item">
-      <a href="../journals/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         
   
   
@@ -600,6 +610,7 @@
   
 
       </a>
+      
     </li>
   
 
@@ -683,34 +694,6 @@
   
   
   
-    
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Table of contents
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#how-error-notifications-work" class="md-nav__link">
-    <span class="md-ellipsis">
-      ⚠️ How Error Notifications Work
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#example-screenshots" class="md-nav__link">
-    <span class="md-ellipsis">
-      Example Screenshots
-    </span>
-  </a>
-  
-</li>
-      
-    </ul>
   
 </nav>
                   </div>
@@ -726,36 +709,21 @@
 
 
 
-<h1 id="error-handling"><strong>Error Handling</strong></h1>
-<p>&nbsp;</p>
-<p>If your import file contains errors, the app provides detailed notifications to help you understand and resolve the issues quickly.</p>
-<p>These error messages appear directly on the <strong>Import Proposal</strong> page, so you can address them before continuing with the import.</p>
-<p>&nbsp;</p>
-<h2 id="how-error-notifications-work">⚠️ How Error Notifications Work</h2>
-<ol>
-<li>
-<p><strong>Error Detected During Import</strong><br />
-   If the data is invalid or incomplete, an error notification will be shown immediately on the proposal page.</p>
-</li>
-<li>
-<p><strong>Click the Notification for Details</strong><br />
-   Selecting the error message will open a detailed view, allowing you to review the exact issue and correct it as needed.</p>
-</li>
-</ol>
-<p>&nbsp;</p>
-<h2 id="example-screenshots">Example Screenshots</h2>
+  <h1>Journals</h1>
+
+<p>The Smart Import for Excel app supports importing data into the following journal types in Business Central:</p>
 <ul>
-<li>
-<p><strong>Import Error Notification</strong><br />
-<em>An error message is shown directly on the Import Proposal page.</em><br />
-<a class="glightbox" href="../Assets/ImportError.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="Import error" src="../Assets/ImportError.png" /></a></p>
-</li>
-<li>
-<p><strong>Detailed Error Explanation</strong><br />
-<em>Clicking the message opens a detailed error breakdown.</em><br />
-<a class="glightbox" href="../Assets/ErrorMessages.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="Error messages" src="../Assets/ErrorMessages.png" /></a></p>
-</li>
+<li>General Journals</li>
+<li>Cash Receipt Journals</li>
+<li>Fixed Asset Journals</li>
+<li>Payment Journals</li>
+<li>Purchase Journals</li>
+<li>Sales Journals</li>
+<li>Recurring Journals</li>
+<li>Item Journals</li>
+<li>Resource Journals</li>
 </ul>
+<p>Here is an example for the General Journal: <a href="../general-journal/">General Journal Example</a></p>
 
 
 

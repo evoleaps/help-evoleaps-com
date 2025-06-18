@@ -9,6 +9,10 @@
       
       
       
+        <link rel="prev" href="../licensing/">
+      
+      
+        <link rel="next" href="../ai-powered-import/">
       
       
       <link rel="icon" href="../../assets/images/favicon.png">
@@ -16,7 +20,7 @@
     
     
       
-        <title>Error Handling - </title>
+        <title>Permissions in BC - </title>
       
     
     
@@ -79,7 +83,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#error-handling" class="md-skip">
+        <a href="#permissions-requirements-in-business-central" class="md-skip">
           Skip to content
         </a>
       
@@ -115,7 +119,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Error Handling
+              Permissions in BC
             
           </span>
         </div>
@@ -234,18 +238,20 @@
       
   
   
+    
   
   
+  
     
     
     
     
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_1" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_1" checked>
         
           
           <label class="md-nav__link" for="__nav_1" id="__nav_1_label" tabindex="0">
@@ -261,7 +267,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_1_label" aria-expanded="false">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_1_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_1">
             <span class="md-nav__icon md-icon"></span>
             Smart Import for Excel
@@ -272,18 +278,20 @@
                 
   
   
+    
   
   
+  
     
     
     
     
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_1_1" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_1_1" checked>
         
           
           <label class="md-nav__link" for="__nav_1_1" id="__nav_1_1_label" tabindex="0">
@@ -299,7 +307,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_1_1_label" aria-expanded="false">
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_1_1_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_1_1">
             <span class="md-nav__icon md-icon"></span>
             Getting Started
@@ -379,10 +387,32 @@
                 
   
   
+    
   
   
-    <li class="md-nav__item">
-      <a href="../permissions/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    Permissions in BC
+    
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         
   
   
@@ -393,6 +423,53 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#key-points" class="md-nav__link">
+    <span class="md-ellipsis">
+      Key Points
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#examples" class="md-nav__link">
+    <span class="md-ellipsis">
+      Examples
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#notes-for-admins" class="md-nav__link">
+    <span class="md-ellipsis">
+      Notes for Admins
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -693,18 +770,27 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#how-error-notifications-work" class="md-nav__link">
+  <a href="#key-points" class="md-nav__link">
     <span class="md-ellipsis">
-      ⚠️ How Error Notifications Work
+      Key Points
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#example-screenshots" class="md-nav__link">
+  <a href="#examples" class="md-nav__link">
     <span class="md-ellipsis">
-      Example Screenshots
+      Examples
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#notes-for-admins" class="md-nav__link">
+    <span class="md-ellipsis">
+      Notes for Admins
     </span>
   </a>
   
@@ -726,36 +812,44 @@
 
 
 
-<h1 id="error-handling"><strong>Error Handling</strong></h1>
-<p>&nbsp;</p>
-<p>If your import file contains errors, the app provides detailed notifications to help you understand and resolve the issues quickly.</p>
-<p>These error messages appear directly on the <strong>Import Proposal</strong> page, so you can address them before continuing with the import.</p>
-<p>&nbsp;</p>
-<h2 id="how-error-notifications-work">⚠️ How Error Notifications Work</h2>
-<ol>
-<li>
-<p><strong>Error Detected During Import</strong><br />
-   If the data is invalid or incomplete, an error notification will be shown immediately on the proposal page.</p>
-</li>
-<li>
-<p><strong>Click the Notification for Details</strong><br />
-   Selecting the error message will open a detailed view, allowing you to review the exact issue and correct it as needed.</p>
-</li>
-</ol>
-<p>&nbsp;</p>
-<h2 id="example-screenshots">Example Screenshots</h2>
+<h1 id="permissions-requirements-in-business-central">Permissions Requirements in Business Central</h1>
+<p><strong>Smart Import for Excel</strong> does not require any special permissions to run the app itself.</p>
+<p>If a user has permission to read or modify a specific table in Microsoft Dynamics 365 Business Central (e.g., General Journal, Customer, Vendor, Item), they can use the app to import data into that table.</p>
+<h2 id="key-points">Key Points</h2>
 <ul>
-<li>
-<p><strong>Import Error Notification</strong><br />
-<em>An error message is shown directly on the Import Proposal page.</em><br />
-<a class="glightbox" href="../Assets/ImportError.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="Import error" src="../Assets/ImportError.png" /></a></p>
-</li>
-<li>
-<p><strong>Detailed Error Explanation</strong><br />
-<em>Clicking the message opens a detailed error breakdown.</em><br />
-<a class="glightbox" href="../Assets/ErrorMessages.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="Error messages" src="../Assets/ErrorMessages.png" /></a></p>
-</li>
+<li>There is no dedicated permission set required for the app.</li>
+<li>The app respects existing user permissions defined in Business Central.</li>
+<li>A user will only be able to import data into tables they already have access to.</li>
 </ul>
+<h2 id="examples">Examples</h2>
+<table>
+<thead>
+<tr>
+<th>Table</th>
+<th>Required BC Permission</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>General Journal</td>
+<td>Permission to read/write journal lines</td>
+</tr>
+<tr>
+<td>Customer</td>
+<td>Permission to insert/modify Customer records</td>
+</tr>
+<tr>
+<td>Vendor</td>
+<td>Permission to insert/modify Vendor records</td>
+</tr>
+<tr>
+<td>Item</td>
+<td>Permission to insert/modify Item records</td>
+</tr>
+</tbody>
+</table>
+<h2 id="notes-for-admins">Notes for Admins</h2>
+<p>To ensure a user can use Smart Import effectively, simply verify that the user has the correct standard permissions for the target table they’re importing into. The app will not override or bypass Business Central’s permission system.</p>
 
 
 

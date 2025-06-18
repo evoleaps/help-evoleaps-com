@@ -70,4 +70,19 @@
 .md-nav__title .md-logo img {
   display: none !important;
 }
+.md-nav__title {
+  display: none !important;
+}
+
+.md-nav__link {
+  white-space: nowrap !important;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+/* Boji prvu sekciju u meniju (npr. "Smart Import for Excel") */
+.md-nav__item--section:first-of-type > label.md-nav__link {
+  color: #007bff !important;
+  font-weight: bold;
+}
 

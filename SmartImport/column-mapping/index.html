@@ -9,6 +9,10 @@
       
       
       
+        <link rel="prev" href="../how-it-works/">
+      
+      
+        <link rel="next" href="../copilot-usage/">
       
       
       <link rel="icon" href="../../assets/images/favicon.png">
@@ -16,7 +20,7 @@
     
     
       
-        <title>Error Handling - </title>
+        <title>Column Mapping - </title>
       
     
     
@@ -79,7 +83,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#error-handling" class="md-skip">
+        <a href="#understanding-column-mapping" class="md-skip">
           Skip to content
         </a>
       
@@ -115,7 +119,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Error Handling
+              Column Mapping
             
           </span>
         </div>
@@ -234,18 +238,20 @@
       
   
   
+    
   
   
+  
     
     
     
     
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_1" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_1" checked>
         
           
           <label class="md-nav__link" for="__nav_1" id="__nav_1_label" tabindex="0">
@@ -261,7 +267,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_1_label" aria-expanded="false">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_1_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_1">
             <span class="md-nav__icon md-icon"></span>
             Smart Import for Excel
@@ -410,18 +416,20 @@
                 
   
   
+    
   
   
+  
     
     
     
     
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_1_2" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_1_2" checked>
         
           
           <label class="md-nav__link" for="__nav_1_2" id="__nav_1_2_label" tabindex="0">
@@ -437,7 +445,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_1_2_label" aria-expanded="false">
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_1_2_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_1_2">
             <span class="md-nav__icon md-icon"></span>
             Core Concepts
@@ -494,10 +502,32 @@
                 
   
   
+    
   
   
-    <li class="md-nav__item">
-      <a href="../column-mapping/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    Column Mapping
+    
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         
   
   
@@ -508,6 +538,53 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#how-column-mapping-works" class="md-nav__link">
+    <span class="md-ellipsis">
+      How Column Mapping Works
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#manual-adjustments" class="md-nav__link">
+    <span class="md-ellipsis">
+      Manual Adjustments
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#tips-for-better-results" class="md-nav__link">
+    <span class="md-ellipsis">
+      Tips for Better Results
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -693,18 +770,27 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#how-error-notifications-work" class="md-nav__link">
+  <a href="#how-column-mapping-works" class="md-nav__link">
     <span class="md-ellipsis">
-      ⚠️ How Error Notifications Work
+      How Column Mapping Works
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#example-screenshots" class="md-nav__link">
+  <a href="#manual-adjustments" class="md-nav__link">
     <span class="md-ellipsis">
-      Example Screenshots
+      Manual Adjustments
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#tips-for-better-results" class="md-nav__link">
+    <span class="md-ellipsis">
+      Tips for Better Results
     </span>
   </a>
   
@@ -726,35 +812,25 @@
 
 
 
-<h1 id="error-handling"><strong>Error Handling</strong></h1>
-<p>&nbsp;</p>
-<p>If your import file contains errors, the app provides detailed notifications to help you understand and resolve the issues quickly.</p>
-<p>These error messages appear directly on the <strong>Import Proposal</strong> page, so you can address them before continuing with the import.</p>
-<p>&nbsp;</p>
-<h2 id="how-error-notifications-work">⚠️ How Error Notifications Work</h2>
-<ol>
-<li>
-<p><strong>Error Detected During Import</strong><br />
-   If the data is invalid or incomplete, an error notification will be shown immediately on the proposal page.</p>
-</li>
-<li>
-<p><strong>Click the Notification for Details</strong><br />
-   Selecting the error message will open a detailed view, allowing you to review the exact issue and correct it as needed.</p>
-</li>
-</ol>
-<p>&nbsp;</p>
-<h2 id="example-screenshots">Example Screenshots</h2>
+<h1 id="understanding-column-mapping">Understanding Column Mapping</h1>
+<p>Smart Import for Excel uses AI to automatically map columns from your Excel file to the corresponding fields in Dynamics 365 Business Central — even if the column names are not an exact match.</p>
+<h2 id="how-column-mapping-works">How Column Mapping Works</h2>
+<p>When you upload a file and click <strong>Generate</strong>, the app performs intelligent matching between:</p>
 <ul>
-<li>
-<p><strong>Import Error Notification</strong><br />
-<em>An error message is shown directly on the Import Proposal page.</em><br />
-<a class="glightbox" href="../Assets/ImportError.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="Import error" src="../Assets/ImportError.png" /></a></p>
-</li>
-<li>
-<p><strong>Detailed Error Explanation</strong><br />
-<em>Clicking the message opens a detailed error breakdown.</em><br />
-<a class="glightbox" href="../Assets/ErrorMessages.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="Error messages" src="../Assets/ErrorMessages.png" /></a></p>
-</li>
+<li>Excel column headers (e.g., "Customer No.", "Posting Date", "Amount")</li>
+<li>Business Central field names in the selected table (e.g., <code>Sell-to Customer No.</code>, <code>Posting Date</code>, <code>Amount</code>)</li>
+</ul>
+<p>The mapping logic takes into account:
+- Synonyms and variations in field names<br />
+- Data types and expected formats  </p>
+<h2 id="manual-adjustments">Manual Adjustments</h2>
+<p>If any columns are not mapped automatically, or if the mapping is incorrect, you can manually:
+- Select the correct target field for each column<br />
+- Preview how values will be filled in the destination table</p>
+<h2 id="tips-for-better-results">Tips for Better Results</h2>
+<ul>
+<li>Use clear, descriptive column headers in your Excel file.</li>
+<li>Avoid merging header cells or using multiple header rows.</li>
 </ul>
 
 
