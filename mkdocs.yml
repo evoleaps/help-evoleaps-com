@@ -1,20 +1,36 @@
 site_name: ""
 
 nav:
-
   - Smart Import for Excel:
-    - Introduction: SmartImport/index.md
-    - Getting Started - General Journal: SmartImport/getting-started.md
-    #- Regenerate: SmartImport/regenerate.md
-    #- Error Handling: SmartImport/error-handling.md
+    - Getting Started:
+      - Overview of Smart Excel Import: SmartImport/overview.md
+      - Installation from AppSource: SmartImport/installation.md
+      - Licensing & Free Trial: SmartImport/licensing.md
+      - Permissions in BC: SmartImport/permissions.md
+
+    - Core Concepts:
+      - What is AI-Powered Import?: SmartImport/ai-powered-import.md
+      - How Smart Import Works: SmartImport/how-it-works.md
+      - Column Mapping: SmartImport/column-mapping.md
+      - How Copilot Uses Excel: SmartImport/copilot-usage.md
+
+    - Supported Import Destinations:
+      - Journals: SmartImport/journals.md
+      - Master Data: SmartImport/master-data.md
+
+    - FAQ: SmartImport/faq.md
+    
 
 theme:
-  name: material  # Optional theme
+  name: material
+  features:
+    - navigation.path
+    - navigation.tracking
+    - navigation.accordion
   custom_dir: overrides
-  #logo: assets/images/logo/smallGray.png  # Path to your logo
   favicon: assets/images/favicon.png
   search:
-    lang: en  # Set the language of your documentation (e.g., 'en' for English)
+    lang: en
   palette:
     - media: "(prefers-color-scheme: light)"
       scheme: default
@@ -30,7 +46,8 @@ theme:
       accent: blue
       toggle:
         icon: material/weather-sunny
-        name: Switch to light mode  
+        name: Switch to light mode
+
 plugins:
   - search
   - glightbox

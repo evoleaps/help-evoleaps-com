@@ -1,137 +1,75 @@
-# **Getting Started with General journal**
+# Getting Started
 
-&nbsp;
+## Overview of Smart Excel Import
+This app simplifies and accelerates the process of importing data from Microsoft Excel into Dynamics 365 Business Central — no predefined templates or manual setup required.
 
-This app is ready to use immediately after installation — no setup required.
+Powered by advanced AI recognition, the app intelligently maps Excel columns to journal fields based on their names — even when the labels aren’t an exact match. It automatically identifies and aligns the correct fields, reducing manual effort and minimizing the risk of errors.
 
-A new action called **Import with Copilot** is available on the General Journal page.
+Just upload your Excel file, and the app will:  
+- Detects relevant columns  
+- Matches them to the appropriate fields  
+- Ensures data accuracy and consistency
 
-&nbsp;
+![Excel import](Assets/ImportExcel.png)
 
-## Step-by-Step: How to Import Excel Data
+## Installation from AppSource
+To install Smart Import for Excel, follow these steps:
 
-1. **Click Import with Copilot**  
-   Locate this action in the ribbon of the journal or table where you want to import data.
+Go to the official Microsoft AppSource page:
+[**Smart Import for Excel on AppSource**](https://appsource.microsoft.com/en-us/product/dynamics-365-business-central/PUBID.evoleaps-doo%7CAID.smart-import%7CPAPPID.28e9415c-2540-4574-aa13-f22b4919437b?tab=Overview)
 
-2. **Select Your Excel File**  
-   In the dialog that appears, click **Attach** or **Import Data from File**, then choose your Excel document.
+Complete the installation wizard. The app will be automatically deployed to your selected environment.
 
-3. **Review the Data Preview**  
-   The app automatically detects and matches columns based on their names. You’ll see a preview of the records that will be imported.
+Once installed, open Business Central, and navigate to the Smart Import for Excel pages via the Tell Me search.
 
-4. **Confirm the Import**  
-   Click **Keep it** to finalize the import. The data will be inserted into the journal or table immediately.
-
-!!! warning "Important"
-    The **order** of the columns **Account Type** and **Account No.** in your Excel file matters.  
-    Make sure **Account Type** comes **before** **Account No.** to ensure correct field mapping and avoid errors.
-
-&nbsp;
-
-## Example Screenshots
-
-1. **General Journal — Import with Copilot Action**  
-   _This shows where the Import action is located in the General Journal._  
-   ![General Journal - Import Action](Assets/Action.png)
-   
-    &nbsp;
-
-2. **AI Prompt for Import**  
-   _The prompt used by the AI to help recognize and import your file._  
-   ![AI Prompt](Assets/AIPrompt.png)
-   
-    &nbsp;
-
-3. **Import File Dialog**  
-   _Attach your Excel file or select it for import._  
-   ![Import Prompt](Assets/ImportPrompt.png)
-   
-     &nbsp;
-
-4. **Data Preview Window**  
-   _A preview of how the Excel data maps into the journal lines._  
-   ![Import Preview](Assets/ImportPreview.png)
-   
-    &nbsp;
-
-5. **Journal After Import**  
-   _Imported lines are added to the journal automatically._  
-   ![Journal After Import](Assets/JournalAfterImport.png)
-   
-    &nbsp;
-
-6. **Sample Excel File**  
-   _An example Excel file with data ready for import._  
-   [Download this Excel template to try it yourself →](Assets/sample-journal.xlsx)
-
----
-
-&nbsp;
-# **Regenerating the Import Proposal**
+Note:
+No additional configuration is required. The app is ready to use immediately after installation.
 
 
 
-You can modify how Excel columns are mapped to journal fields before finalizing the import.
 
-This is useful when the automatic matching isn't quite right, or when you want to customize which field receives the imported data.
+## Licensing & Free Trial
+**Smart Import for Excel** is available with a free trial period so you can explore its features before committing to a subscription.
 
-&nbsp;
+## Free Trial
 
-## Step-by-Step: How to Regenerate Column Mapping
+- A fully functional **free trial** is available for new users.
+- No setup is required to start the trial.
 
-1. **Click “Columns Mapped”**  
-   After the app generates the initial mapping, select **Columns Mapped** to review the proposed field assignments.
+## Licensing
 
-2. **Choose a Different Destination Field**  
-   Click on a mapped field you want to change, and select a different destination from the list.
+After the trial ends, a valid license is required to continue using the app. Licensing is based on:
 
-3. **Click “Regenerate”**  
-   After adjusting the mapping, click **Regenerate** to create a new import proposal based on your changes.
+- **Per Business Central environment** (production or sandbox).
+- Subscription can be purchased directly through **AppSource** or by contacting the publisher.
 
-&nbsp;
+For pricing and licensing details, visit the app page [Pricing](https://www.evoleaps.com/pricing).
 
-## Example Screenshots
-
-- **Mapped Columns Review**  
-  _Displays how Excel columns were initially matched to journal fields._  
-  ![Columns mapped](Assets/ColumnsMapped.png)
-
-- **Select a Different Field**  
-  _Choose the desired destination field from the list._  
-  ![Select field](Assets/SelectField.png)
-
-&nbsp;
-
----
-
-# **Error Handling**
+If you need a custom plan or have any licensing questions, please contact our support team.
 
 
-If your import file contains errors, the app provides detailed notifications to help you understand and resolve the issues quickly.
+## Permissions Requirements in Business Central
+**Smart Import for Excel** does not require any special permissions to run the app itself.
 
-These error messages appear directly on the **Import Proposal** page, so you can address them before continuing with the import.
+If a user has permission to read or modify a specific table in Microsoft Dynamics 365 Business Central (e.g., General Journal, Customer, Vendor, Item), they can use the app to import data into that table.
 
+## Key Points
 
+- There is no dedicated permission set required for the app.
+- The app respects existing user permissions defined in Business Central.
+- A user will only be able to import data into tables they already have access to.
 
-## ⚠️ How Error Notifications Work
+## Examples
 
-1. **Error Detected During Import**  
-   If the data is invalid or incomplete, an error notification will be shown immediately on the proposal page.
+| Table | Required BC Permission |
+|-------|-------------------------|
+| General Journal | Permission to read/write journal lines |
+| Customer | Permission to insert/modify Customer records |
+| Vendor | Permission to insert/modify Vendor records |
+| Item | Permission to insert/modify Item records |
 
-2. **Click the Notification for Details**  
-   Selecting the error message will open a detailed view, allowing you to review the exact issue and correct it as needed.
+## Notes for Admins
 
-&nbsp;
-
-## Example Screenshots
-
-- **Import Error Notification**  
-  _An error message is shown directly on the Import Proposal page._  
-  ![Import error](Assets/ImportError.png)
-
-- **Detailed Error Explanation**  
-  _Clicking the message opens a detailed error breakdown._  
-  ![Error messages](Assets/ErrorMessages.png)
+To ensure a user can use Smart Import effectively, simply verify that the user has the correct standard permissions for the target table they’re importing into. The app will not override or bypass Business Central’s permission system.
 
 
-✅ That’s it! Your data is imported and ready to post — no templates, no manual mapping, no stress.

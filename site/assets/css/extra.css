@@ -71,3 +71,9 @@
   display: none !important;
 }
 
+.md-nav__link {
+  white-space: nowrap !important;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+

@@ -16,7 +16,7 @@
     
     
       
-        <title>Regenerating the Import Proposal - </title>
+        <title>How Copilot Uses Your Excel File - </title>
       
     
     
@@ -79,7 +79,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#regenerating-the-import-proposal" class="md-skip">
+        <a href="#how-copilot-uses-your-excel-file" class="md-skip">
           Skip to content
         </a>
       
@@ -115,7 +115,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Regenerating the Import Proposal
+              How Copilot Uses Your Excel File
             
           </span>
         </div>
@@ -535,7 +535,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../copilot-usage.md" class="md-nav__link">
+      <a href="." class="md-nav__link">
         
   
   
@@ -712,18 +712,36 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#step-by-step-how-to-regenerate-column-mapping" class="md-nav__link">
+  <a href="#what-happens-when-you-upload-a-file" class="md-nav__link">
     <span class="md-ellipsis">
-      🔄 Step-by-Step: How to Regenerate Column Mapping
+      What Happens When You Upload a File
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#example-screenshots" class="md-nav__link">
+  <a href="#ai-mapping-behavior" class="md-nav__link">
     <span class="md-ellipsis">
-      📸 Example Screenshots
+      AI Mapping Behavior
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#privacy-and-security" class="md-nav__link">
+    <span class="md-ellipsis">
+      Privacy and Security
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#summary" class="md-nav__link">
+    <span class="md-ellipsis">
+      Summary
     </span>
   </a>
   
@@ -745,40 +763,29 @@
 
 
 
-<h1 id="regenerating-the-import-proposal"><strong>Regenerating the Import Proposal</strong></h1>
-<p>&nbsp;</p>
-<p>You can modify how Excel columns are mapped to journal fields before finalizing the import.</p>
-<p>This is useful when the automatic matching isn't quite right, or when you want to customize which field receives the imported data.</p>
-<p>&nbsp;</p>
-<h2 id="step-by-step-how-to-regenerate-column-mapping">🔄 Step-by-Step: How to Regenerate Column Mapping</h2>
-<ol>
-<li>
-<p><strong>Click “Columns Mapped”</strong><br />
-   After the app generates the initial mapping, select <strong>Columns Mapped</strong> to review the proposed field assignments.</p>
-</li>
-<li>
-<p><strong>Choose a Different Destination Field</strong><br />
-   Click on a mapped field you want to change, and select a different destination from the list.</p>
-</li>
-<li>
-<p><strong>Click “Regenerate”</strong><br />
-   After adjusting the mapping, click <strong>Regenerate</strong> to create a new import proposal based on your changes.</p>
-</li>
-</ol>
-<p>&nbsp;</p>
-<h2 id="example-screenshots">📸 Example Screenshots</h2>
+<h1 id="how-copilot-uses-your-excel-file">How Copilot Uses Your Excel File</h1>
+<p>Smart Import for Excel uses Azure OpenAI services to enhance the import experience through intelligent column mapping.</p>
+<h2 id="what-happens-when-you-upload-a-file">What Happens When You Upload a File</h2>
+<p>When you upload your Excel file:</p>
 <ul>
-<li>
-<p><strong>Mapped Columns Review</strong><br />
-<em>Displays how Excel columns were initially matched to journal fields.</em><br />
-<a class="glightbox" href="../Assets/ColumnsMapped.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="Columns mapped" src="../Assets/ColumnsMapped.png" /></a></p>
-</li>
-<li>
-<p><strong>Select a Different Field</strong><br />
-<em>Choose the desired destination field from the list.</em><br />
-<a class="glightbox" href="../Assets/SelectField.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="Select field" src="../Assets/SelectField.png" /></a></p>
-</li>
+<li><strong>Only the header row (column names)</strong> is extracted and securely sent to the Azure AI service.</li>
+<li><strong>No row-level data</strong> (i.e., actual records) is sent or processed by the AI.</li>
 </ul>
+<p>The AI then analyzes the column names and returns a suggestion for how each column should be mapped to fields in Business Central.</p>
+<h2 id="ai-mapping-behavior">AI Mapping Behavior</h2>
+<ul>
+<li>The AI attempts to recognize common patterns (e.g., “Customer No.”, “Amount”, “Posting Date”) even if the names are not an exact match.</li>
+<li>It returns a list of suggested mappings between Excel column names and Business Central fields.</li>
+<li>These mappings are applied automatically but can be reviewed and adjusted before completing the import.</li>
+</ul>
+<h2 id="privacy-and-security">Privacy and Security</h2>
+<ul>
+<li><strong>Only headers are shared</strong> with the AI service.</li>
+<li><strong>No sensitive or personal data</strong> is exposed.</li>
+<li>All communication is done securely and in compliance with Microsoft’s data handling standards.</li>
+</ul>
+<h2 id="summary">Summary</h2>
+<p>The Copilot feature helps reduce setup time and improve data accuracy by using AI to interpret your Excel headers and suggest how to map them to the appropriate fields in Business Central — all without requiring predefined templates.</p>
 
 
 
