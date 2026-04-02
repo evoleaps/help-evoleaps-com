@@ -1,0 +1,494 @@
+/* ============================================================
+   Evoleaps Help — Microsoft Learn–inspired theme
+   MkDocs Material override stylesheet
+   ============================================================ */
+
+/* ------------------------------------------------------------
+   1. COLOR PALETTE  (Microsoft design tokens)
+   ------------------------------------------------------------ */
+:root {
+  /* Brand / primary — light mode */
+  --ms-blue:            #0067b8;
+  --ms-blue-dark:       #005a9e;
+  --ms-blue-darker:     #004578;
+  --ms-blue-light:      #e8f0fb;
+
+  /* Accent (Evoleaps teal) */
+  --evoleaps-teal:      #1db9c4;
+  --evoleaps-teal-dark: #17a2ab;
+
+  /* Neutrals — light mode */
+  --ms-header-bg:       #0d6e75;
+  --ms-sidebar-bg:      #f5f5f5;
+  --ms-border:          #d2d2d2;
+  --ms-text:            #1b1b1b;
+  --ms-text-secondary:  #616161;
+  --ms-surface:         #ffffff;
+  --ms-surface-raised:  #f8f8f8;
+  --ms-code-bg:         #f3f2f1;
+  --ms-code-color:      #c7372f;
+
+  /* MkDocs Material overrides */
+  --md-primary-fg-color:              var(--ms-header-bg);
+  --md-primary-fg-color--light:       #444444;
+  --md-primary-fg-color--dark:        #000000;
+  --md-primary-bg-color:              #ffffff;
+  --md-primary-bg-color--light:       rgba(255,255,255,.7);
+  --md-accent-fg-color:               var(--ms-blue);
+  --md-accent-fg-color--transparent:  rgba(0,103,184,.1);
+  --md-accent-bg-color:               #ffffff;
+  --md-typeset-a-color:               var(--ms-blue);
+}
+
+/* ---- COMPREHENSIVE DARK MODE OVERRIDES ---- */
+[data-md-color-scheme="slate"] {
+  /* Flip every custom variable */
+  --ms-blue:            #5ea2e8;
+  --ms-blue-dark:       #7ab8f0;
+  --ms-blue-darker:     #90c8f8;
+  --ms-blue-light:      rgba(94,162,232,.15);
+  --ms-sidebar-bg:      #1e1e1e;
+  --ms-border:          #3d3d3d;
+  --ms-text:            #e2e2e2;
+  --ms-text-secondary:  #aaaaaa;
+  --ms-surface:         #242424;
+  --ms-surface-raised:  #2d2d2d;
+  --ms-code-bg:         #2a2a2a;
+  --ms-code-color:      #f08080;
+
+  /* Material overrides */
+  --md-primary-fg-color:             #ffffff;  /* white text on teal header */
+  --md-accent-fg-color:              #5ea2e8;
+  --md-typeset-a-color:              #5ea2e8;
+  --md-default-bg-color:             #1a1a1a;
+  --md-default-bg-color--light:      hsla(0,0%,100%,.1);
+  --md-default-bg-color--lighter:    hsla(0,0%,100%,.07);
+  --md-default-bg-color--lightest:   hsla(0,0%,100%,.04);
+}
+
+/* ------------------------------------------------------------
+   2. GLOBAL TYPOGRAPHY
+   ------------------------------------------------------------ */
+body {
+  font-family: "Segoe UI", system-ui, -apple-system, sans-serif;
+  -webkit-font-smoothing: antialiased;
+}
+
+.md-typeset {
+  font-size: .88rem;
+  line-height: 1.6;
+  /* Use Material's own typeset color so dark mode works automatically */
+  color: var(--md-typeset-color);
+}
+
+.md-typeset h1 {
+  font-size: 1.75rem;
+  font-weight: 600;
+  margin-bottom: .5rem;
+  padding-bottom: .4rem;
+  border-bottom: 1px solid var(--ms-border);
+}
+
+.md-typeset h2 {
+  font-size: 1.25rem;
+  font-weight: 600;
+  margin-top: 1.8rem;
+}
+
+.md-typeset h3 { font-size: 1.05rem; font-weight: 600; }
+.md-typeset h4 { font-size: .95rem;  font-weight: 600; }
+
+.md-typeset a { color: var(--ms-blue); text-decoration: none; }
+.md-typeset a:hover { color: var(--ms-blue-dark); text-decoration: underline; }
+
+/* ------------------------------------------------------------
+   3. HEADER
+   ------------------------------------------------------------ */
+.md-header {
+  background-color: var(--ms-header-bg);
+  box-shadow: 0 1px 4px rgba(0,0,0,.4);
+  height: 3rem;
+}
+
+.md-header__title {
+  font-size: .9rem;
+  font-weight: 600;
+  letter-spacing: .01em;
+}
+
+.md-header__button.md-logo img,
+.md-header__button.md-logo svg {
+  height: 1.8rem;
+  width: auto;
+  border-radius: 2px;
+}
+
+/* Search bar */
+.md-search__form {
+  background-color: rgba(255,255,255,.12);
+  border: 1px solid rgba(255,255,255,.25);
+  border-radius: 4px;
+  transition: background-color .15s ease;
+}
+.md-search__form:hover,
+.md-search__form:focus-within {
+  background-color: rgba(255,255,255,.2);
+  border-color: rgba(255,255,255,.5);
+}
+
+/* ------------------------------------------------------------
+   4. NAVIGATION TABS (top-level)
+   ------------------------------------------------------------ */
+.md-tabs {
+  background-color: var(--ms-header-bg);
+  border-top: 1px solid rgba(255,255,255,.1);
+}
+
+.md-tabs__link {
+  font-size: .8rem;
+  font-weight: 500;
+  opacity: .75;
+  padding: 0 .8rem;
+}
+
+.md-tabs__link:hover { opacity: 1; }
+.md-tabs__link--active {
+  opacity: 1;
+  border-bottom: 2px solid var(--evoleaps-teal);
+}
+
+/* ------------------------------------------------------------
+   5. LEFT SIDEBAR / NAV
+   ------------------------------------------------------------ */
+.md-sidebar--primary {
+  background-color: var(--ms-sidebar-bg);
+  border-right: 1px solid var(--ms-border);
+}
+
+.md-nav__title {
+  font-size: .7rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: .08em;
+  color: var(--ms-text-secondary);
+  padding: .8rem .8rem .3rem;
+}
+
+.md-nav__item .md-nav__link {
+  font-size: .82rem;
+  /* Inherit Material's own color so dark mode nav text is correct */
+  color: var(--md-typeset-color);
+  padding: .35rem .75rem;
+  border-radius: 4px;
+  transition: background-color .12s, color .12s;
+}
+
+.md-nav__item .md-nav__link:hover {
+  background-color: rgba(94,162,232,.1);
+  color: var(--ms-blue);
+}
+
+.md-nav__item .md-nav__link--active,
+.md-nav__item .md-nav__link[aria-current="page"],
+.md-nav__item .md-nav__link--active:hover,
+.md-nav__item .md-nav__link[aria-current="page"]:hover {
+  /* Use a subtle background instead of a large grey block; force with !important
+     to override theme-specific attribute selectors if needed. */
+  background-color: rgba(0,0,0,0.04) !important;
+  color: var(--ms-blue-darker) !important;
+  font-weight: 600;
+  border-left: 3px solid var(--ms-blue);
+  padding-left: calc(.75rem - 3px);
+  box-shadow: none !important;
+}
+
+/* ------------------------------------------------------------
+   6. CONTENT AREA
+   ------------------------------------------------------------ */
+.md-content { max-width: 900px; }
+
+.md-content__inner { padding: 1.5rem 1.8rem 2rem; }
+
+.md-typeset img {
+  border-radius: 4px;
+  border: 1px solid var(--ms-border);
+  max-width: 100%;
+  display: block;
+  margin: 1rem auto;
+}
+
+/* Tables */
+.md-typeset table:not([class]) {
+  border-collapse: collapse;
+  font-size: .85rem;
+  width: 100%;
+  border: 1px solid var(--ms-border);
+}
+.md-typeset table:not([class]) th {
+  background-color: var(--ms-surface-raised);
+  font-weight: 600;
+  border: 1px solid var(--ms-border);
+  padding: .55rem .75rem;
+  text-align: left;
+}
+.md-typeset table:not([class]) td {
+  border: 1px solid var(--ms-border);
+  padding: .45rem .75rem;
+}
+.md-typeset table:not([class]) tr:hover td {
+  background-color: var(--ms-blue-light);
+}
+
+/* Code */
+.md-typeset code {
+  font-family: "Cascadia Code", "Consolas", monospace;
+  font-size: .83rem;
+  background-color: var(--ms-code-bg);
+  padding: .15em .4em;
+  border-radius: 3px;
+  color: var(--ms-code-color);
+}
+.md-typeset pre > code { color: inherit; background: transparent; padding: 0; }
+.md-typeset .highlight pre { border-radius: 6px; font-size: .83rem; }
+
+/* ------------------------------------------------------------
+   7. RIGHT-HAND TOC ("In this article")
+   ------------------------------------------------------------ */
+.md-sidebar--secondary { border-left: 1px solid var(--ms-border); }
+
+.md-nav--secondary .md-nav__title {
+  font-size: .72rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: .08em;
+  color: var(--ms-text-secondary);
+  padding: 1rem .75rem .4rem;
+  border: none;
+}
+
+.md-nav--secondary .md-nav__link {
+  font-size: .78rem;
+  color: var(--ms-text-secondary) !important;
+  padding: .28rem .5rem;
+  border-left: 2px solid transparent;
+  transition: color .12s, border-color .12s;
+}
+
+.md-nav--secondary .md-nav__link:hover {
+  color: var(--ms-blue);
+  border-left-color: var(--ms-blue);
+}
+
+.md-nav--secondary .md-nav__link--active {
+  color: var(--ms-blue);
+  font-weight: 600;
+  border-left: 2px solid var(--ms-blue);
+}
+
+/* ------------------------------------------------------------
+   8. ADMONITIONS (Note / Tip / Warning / Important)
+   ------------------------------------------------------------ */
+.md-typeset .admonition,
+.md-typeset details {
+  border: none;
+  border-left: 4px solid;
+  border-radius: 0 4px 4px 0;
+  padding: .75rem 1rem;
+  background-color: var(--ms-surface-raised);
+  box-shadow: none;
+}
+
+.md-typeset .admonition.note,  .md-typeset details.note  { border-left-color: var(--ms-blue);  background-color: var(--ms-blue-light); }
+.md-typeset .admonition.tip,   .md-typeset details.tip   { border-left-color: #107c10; background-color: rgba(16,124,16,.12); }
+.md-typeset .admonition.warning,.md-typeset details.warning,
+.md-typeset .admonition.caution,.md-typeset details.caution { border-left-color: #d83b01; background-color: rgba(216,59,1,.1); }
+.md-typeset .admonition.important,.md-typeset details.important { border-left-color: #6b2fba; background-color: rgba(107,47,186,.1); }
+.md-typeset .admonition.info,  .md-typeset details.info  { border-left-color: var(--evoleaps-teal); background-color: rgba(29,185,196,.1); }
+
+.md-typeset .admonition-title {
+  font-size: .82rem;
+  font-weight: 600;
+  padding: 0 0 .4rem;
+  background: transparent;
+  border: none;
+}
+
+/* ------------------------------------------------------------
+   9. PREV / NEXT NAVIGATION & FOOTER
+   ------------------------------------------------------------ */
+.md-footer { background-color: #0a555b; }
+.md-footer-meta { background-color: #083f44; }
+/* Hide "Made with Material for MkDocs" branding — covers all Material versions */
+.md-copyright__highlight,
+.md-footer-copyright__highlight { display: none !important; }
+.md-footer-meta .md-copyright { display: none !important; }
+.md-footer-meta__inner { text-align: center; font-size: .75rem; color: rgba(255,255,255,.6); }
+.md-social__link svg { fill: rgba(255,255,255,.6); }
+.md-social__link:hover svg { fill: white; }
+
+/* ------------------------------------------------------------
+   10. HOMEPAGE — MS Learn style
+   ------------------------------------------------------------ */
+
+/* Hero / welcome banner */
+.home-hero {
+  border-bottom: 1px solid var(--ms-border);
+  padding: 2.5rem 0 2rem;
+  margin-bottom: 2rem;
+}
+
+.home-hero__eyebrow {
+  font-size: .72rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: .1em;
+  color: var(--evoleaps-teal);
+  margin-bottom: .5rem;
+}
+
+.home-hero__title {
+  font-size: 2.2rem !important;
+  font-weight: 700 !important;
+  color: var(--ms-text) !important;
+  border-bottom: none !important;
+  margin: 0 0 .75rem !important;
+  padding: 0 !important;
+  line-height: 1.2;
+}
+
+.home-hero__subtitle {
+  font-size: 1.05rem;
+  color: var(--ms-text-secondary);
+  max-width: 680px;
+  line-height: 1.6;
+}
+
+/* Section headings on home page */
+.home-section-title {
+  font-size: .8rem !important;
+  font-weight: 700 !important;
+  text-transform: uppercase !important;
+  letter-spacing: .1em !important;
+  color: var(--ms-text-secondary) !important;
+  border-bottom: none !important;
+  padding-bottom: 0 !important;
+  margin: 2rem 0 1rem !important;
+}
+
+/* Product card grid */
+.product-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+
+.product-card {
+  border: 1px solid var(--ms-border);
+  border-radius: 6px;
+  padding: 1.25rem 1.5rem;
+  background: var(--ms-surface) !important;
+  transition: box-shadow .15s, border-color .15s;
+  display: flex;
+  flex-direction: column;
+  gap: .4rem;
+  text-decoration: none !important;
+  color: var(--md-typeset-color) !important;
+}
+
+.product-card:hover {
+  box-shadow: 0 2px 12px rgba(0,0,0,.12);
+  border-color: var(--evoleaps-teal);
+}
+
+.product-card__icon {
+  font-size: 1.8rem;
+  line-height: 1;
+  color: initial !important;
+}
+.product-card__title {
+  font-size: 1rem;
+  font-weight: 600;
+  color: var(--ms-blue) !important;
+}
+.product-card__description {
+  font-size: .82rem;
+  color: var(--ms-text-secondary) !important;
+  line-height: 1.5;
+}
+.product-card__cta {
+  font-size: .8rem;
+  color: var(--evoleaps-teal) !important;
+  font-weight: 600;
+  margin-top: .4rem;
+}
+
+/* Popular articles list */
+.article-list {
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+  border: 1px solid var(--ms-border);
+  border-radius: 6px;
+  overflow: hidden;
+  margin-bottom: 2rem;
+}
+
+.article-link {
+  display: flex;
+  flex-direction: column;
+  gap: .2rem;
+  padding: .85rem 1.1rem;
+  border-bottom: 1px solid var(--ms-border);
+  text-decoration: none !important;
+  background: var(--ms-surface);
+  transition: background-color .12s;
+}
+.article-link:last-child { border-bottom: none; }
+
+.article-link:hover {
+  background-color: var(--ms-blue-light);
+  text-decoration: none !important;
+}
+
+.article-link__title {
+  font-size: .9rem;
+  font-weight: 600;
+  color: var(--ms-blue) !important;
+}
+
+.article-link__desc {
+  font-size: .8rem;
+  color: var(--ms-text-secondary) !important;
+  line-height: 1.4;
+}
+
+/* Keep old .hero class working if referenced elsewhere */
+.hero {
+  background: linear-gradient(135deg, #004578 0%, #0067b8 60%, #1db9c4 100%);
+  color: white;
+  padding: 3rem 2rem;
+  border-radius: 8px;
+  margin-bottom: 2rem;
+}
+.hero h1 { color: white !important; border-bottom: none !important; font-size: 2rem !important; }
+.hero p { font-size: 1.05rem; opacity: .9; max-width: 640px; }
+
+/* Feedback */
+.md-feedback { border-top: 1px solid var(--ms-border); padding-top: 1.25rem; margin-top: 2rem; }
+
+/* ------------------------------------------------------------
+   11. RESPONSIVE
+   ------------------------------------------------------------ */
+@media screen and (max-width: 76.1875em) {
+  .md-content__inner { padding: 1rem 1.2rem; }
+}
+
+@media screen and (max-width: 44.9375em) {
+  .md-typeset h1 { font-size: 1.4rem; }
+  .product-grid { grid-template-columns: 1fr; }
+  .hero { padding: 2rem 1.25rem; }
+  .hero h1 { font-size: 1.5rem !important; }
+}
+
+/* Force removal of shadow/highlight from active sidebar item */
